@@ -1,0 +1,26 @@
+"""The code provided is supposed replace all the dots . in the specified String str with dashes -
+
+But it's not working properly.
+
+Task"
+
+Fix the bug so we can all go home early.
+
+Notes
+
+String str will never be null."""
+
+# original: 
+import re
+def replace_dots(str):
+    return re.sub(r".", "-", str)
+
+# regex solve:
+import re
+def replace_dots(str):
+    return re.sub(r"\.", "-", str)
+    
+# replace solve:
+def replace_dots(str):
+    return str.replace('.','-')
+    
