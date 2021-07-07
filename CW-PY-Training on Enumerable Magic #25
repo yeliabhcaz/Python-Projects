@@ -2,10 +2,4 @@
 returns a list/array array of the first n elements from the list/array."""
 
 def take(arr,n):
-    list = []
-    if n > len(arr):
-        return arr
-    else:   
-        for _ in range(n):
-            list.append(arr[_])
-        return list
+    return arr[:n]
